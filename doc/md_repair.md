@@ -6,19 +6,19 @@ Clean and repair Markdown files. Can be used as a standalone script or imported 
 
 ```bash
 # Interactive repair (prompts for decisions)
-python md_repair.py file.md
+md-repair file.md
 
 # Non-interactive — skip files with problems
-python md_repair.py file.md --silent
+md-repair file.md --silent
 
 # Insert an H1 heading from the filename if one is missing
-python md_repair.py file.md --fix-headings insert
+md-repair file.md --fix-headings insert
 
 # Renumber headings hierarchically (1., 1.1, 1.1.1, …)
-python md_repair.py file.md --renumber
+md-repair file.md --renumber
 
 # Overwrite the source file with the repaired content
-python md_repair.py file.md --inplace
+md-repair file.md --inplace
 ```
 
 ## Options

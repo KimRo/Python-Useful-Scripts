@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p C:/_github.com/KimRo/Python-Useful-Scripts/src)",
+      "Bash(mv C:/_github.com/KimRo/Python-Useful-Scripts/md_repair.py C:/_github.com/KimRo/Python-Useful-Scripts/md_to_odt.py C:/_github.com/KimRo/Python-Useful-Scripts/md_to_pdf.py C:/_github.com/KimRo/Python-Useful-Scripts/src/)"
+    ]
+  }
+}

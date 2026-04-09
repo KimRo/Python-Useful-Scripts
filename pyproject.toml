@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markdown-utils"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+md-to-pdf  = "md_to_pdf:main"
+md-to-odt  = "md_to_odt:main"
+pdf-to-md  = "pdf_to_md:main"
+odt-to-md  = "odt_to_md:main"
+md-repair  = "md_repair:main"
+
+[tool.setuptools]
+py-modules = ["md_to_pdf", "md_to_odt", "pdf_to_md", "odt_to_md", "md_repair"]
+
+[tool.setuptools.package-dir]
+"" = "src"

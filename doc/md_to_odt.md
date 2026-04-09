@@ -11,16 +11,16 @@ Convert Markdown files to ODT (Open Document Text) via [pandoc](https://pandoc.o
 
 ```bash
 # Interactive menu — pick a file from the folder
-python md_to_odt.py [folder]
+md-to-odt [folder]
 
 # Convert all files in a folder without a menu
-python md_to_odt.py [folder] --all
+md-to-odt [folder] --all
 
 # Convert a single specific file
-python md_to_odt.py --file report.md
+md-to-odt --file report.md
 
 # Fully non-interactive (for automation/scripts)
-python md_to_odt.py [folder] --silent
+md-to-odt [folder] --silent
 ```
 
 ## Options
@@ -44,11 +44,11 @@ In `--silent` mode the repair step defaults to `--fix-headings skip` and `--no-r
 
 ```bash
 # Convert all files silently, inserting an H1 when one is missing
-python md_to_odt.py --silent --fix-headings insert
+md-to-odt --silent --fix-headings insert
 
 # Convert all files in docs/ and renumber headings if repair is triggered
-python md_to_odt.py docs/ --silent --renumber
+md-to-odt docs/ --silent --renumber
 
 # Convert one file interactively
-python md_to_odt.py --file notes.md
+md-to-odt --file notes.md
 ```

@@ -12,16 +12,16 @@ pip install markdown-pdf
 
 ```bash
 # Interactive menu — pick a file from the folder
-python md_to_pdf.py [folder]
+md-to-pdf [folder]
 
 # Convert all files in a folder without a menu
-python md_to_pdf.py [folder] --all
+md-to-pdf [folder] --all
 
 # Convert a single specific file
-python md_to_pdf.py --file report.md
+md-to-pdf --file report.md
 
 # Fully non-interactive (for automation/scripts)
-python md_to_pdf.py [folder] --silent
+md-to-pdf [folder] --silent
 ```
 
 ## Options
@@ -45,11 +45,11 @@ In `--silent` mode the repair step defaults to `--fix-headings skip` and `--no-r
 
 ```bash
 # Convert all files silently, inserting an H1 when one is missing
-python md_to_pdf.py --silent --fix-headings insert
+md-to-pdf --silent --fix-headings insert
 
 # Convert all files in docs/ and renumber headings if repair is triggered
-python md_to_pdf.py docs/ --silent --renumber
+md-to-pdf docs/ --silent --renumber
 
 # Convert one file interactively
-python md_to_pdf.py --file notes.md
+md-to-pdf --file notes.md
 ```
